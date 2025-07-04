@@ -4,7 +4,7 @@ import GifCard from '../components/GifCard';
 import { Gif, GiphyApiResponse } from '../types/Gif';
 
 function GiphySearch(): JSX.Element {
-    const [searchTerm, setSearchTerm] = useState('');
+    const [searchTerm, setSearchTerm] = useState<string>('');
     const [hasSearched, setHasSearched] = useState<boolean>(false);
     const [gifs, setGifs] = useState<Gif[]>([]);
     const [loading, setLoading] = useState<boolean>(false);

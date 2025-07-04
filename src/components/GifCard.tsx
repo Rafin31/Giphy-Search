@@ -27,7 +27,7 @@ function GifCard({ gif }: GifCardProps): JSX.Element {
                 className="w-full h-auto object-cover"
             />
 
-            {/* Hover Action Buttons */}
+            {/* Hover Action Buttons Container */}
             <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-opacity duration-200 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100">
                 <button
                     onClick={handleCopy}
